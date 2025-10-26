@@ -122,7 +122,7 @@ Example console output:
 
 ---
 
-## 🧩 API Endpoints
+## 🧩 API Endpoint
 
 | Method       | Endpoint  | Description                                           |
 | ------------ | --------- | ----------------------------------------------------- |
@@ -153,5 +153,3 @@ count_in_range / total_users * 100
 *  Handle nested keys with dot notation (`a.b.c` → `{ a: { b: { c: value } } }`).
 *  Optimized for up to **50,000+ records**.
 * Uses **JSONB** columns for flexible data storage in PostgreSQL.
-
-✅ Just paste this into your `README.md` — it’s already in perfect GitHub Markdown format.
