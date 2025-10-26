@@ -34,6 +34,10 @@ app.get("/upload", async (req, res) => {
       else counts[">60"]++;
     }
 
+    const total = rows.length;
+    for (let key in counts)
+      counts[key] = ((counts[key] / total) * 100).toFixed(2);
+
     console.table(counts);
     res.json({ status: "Uploaded Successfully", distribution: counts });
   } catch (err) {
